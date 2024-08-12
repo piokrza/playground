@@ -1,14 +1,18 @@
+import { NxWelcomeComponent } from './nx-welcome.component';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+
+import { test } from '#core/constant';
+
+const imports = [NxWelcomeComponent, RouterModule];
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `{{ title }}<router-outlet />`,
   styleUrl: './app.component.scss',
+  standalone: true,
+  imports,
 })
 export class AppComponent {
-  title = 'playground';
+  title = test;
 }
