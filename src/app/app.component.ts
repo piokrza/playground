@@ -8,7 +8,7 @@ const imports = [NxWelcomeComponent, RouterModule];
 
 @Component({
   selector: 'app-root',
-  template: `{{ title }}<router-outlet />`,
+  template: `<router-outlet />`,
   styleUrl: './app.component.scss',
   standalone: true,
   imports,
