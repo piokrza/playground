@@ -1,10 +1,7 @@
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { test } from '#core/constant';
-
-const imports = [NxWelcomeComponent, RouterModule];
+const imports = [RouterModule];
 
 @Component({
   selector: 'app-root',
@@ -13,6 +10,4 @@ const imports = [NxWelcomeComponent, RouterModule];
   standalone: true,
   imports,
 })
-export class AppComponent {
-  title = test;
-}
+export class AppComponent {}
